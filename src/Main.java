@@ -72,6 +72,7 @@ public class Main {
 
                 System.out.println("Nota: ");
                 double nota = sc.nextDouble();
+                sc.nextLine();
 
                 notificacion = new NotificacionCalificacion(
                         codigo, destinatario, mensaje, fechaEnvio, estado,
@@ -99,6 +100,7 @@ public class Main {
                         codigo, destinatario, mensaje, fechaEnvio, estado,
                         canal, motivo
                 );
+                break;
             case 4:
                 System.out.print("Nombre del evento: ");
                 String nombreEvento = sc.nextLine();
@@ -110,6 +112,7 @@ public class Main {
                         codigo, destinatario, mensaje, fechaEnvio, estado,
                         canal,  nombreEvento, lugar
                 );
+                break;
             default:
                 System.out.println("Tipo de Notificación invalida");
                 return;
